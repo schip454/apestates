@@ -1,10 +1,13 @@
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/flatpickr/dist/flatpickr.min';
+@import '../../node_modules/animate.css/animate.min';
+
 @import 'reset';
 @import 'vars';
 @import 'fonts';
 @import 'global';
 @import 'libs';
+
 @import './components/header';
 @import './components/top_section';
 @import './components/about';

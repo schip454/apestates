@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apestates</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" /> -->
@@ -12,7 +13,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__info">
+        <div class="header__info wow animate__animated animate__fadeIn">
           <p class="header__info-address">
             6300 West AdamsBelleville, Michigan 48111
           </p>
@@ -23,7 +24,9 @@
             <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
           </div>
         </div>
-        <div class="header__inner">
+        <div
+          class="header__inner wow animate__animated animate__fadeIn"
+          data-wow-delay=".3s">
           <div class="logo">
             <a class="logo__link" href="index.html">
               <img src="images/logo.svg" alt="Logotype" />
@@ -167,7 +170,9 @@
       <section class="title-section">
         <div class="container">
           <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
+            <ul
+              class="breadcrumbs__list wow animate__animated animate__fadeIn"
+              data-wow-delay=".7s">
               <li class="breadcrumbs__list-item">
                 <a href="index.html" class="breadcrumbs__list-link">Home</a>
               </li>
@@ -177,14 +182,19 @@
               </li>
             </ul>
           </div>
-          <h2 class="global-title">available homes</h2>
+          <h2
+            class="global-title wow animate__animated animate__fadeIn"
+            data-wow-delay=".9s">
+            available homes
+          </h2>
         </div>
       </section>
 
       <section class="section houses">
         <div class="container">
           <div class="houses__items">
-            <div class="houses__item">
+            <div
+              class="houses__item wow animate__animated animate__fadeInRight">
               <div class="houses__item-info">
                 <h3 class="houses__item-title">6233 Truman Dr</h3>
                 <div class="houses__item-box">
@@ -281,7 +291,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
             </div>
-            <div class="houses__item">
+            <div class="houses__item wow animate__animated animate__fadeInLeft">
               <div id="secondHousesSlider" class="houses__slider swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide houses__slider-slide">
@@ -378,7 +388,8 @@
                 </div>
               </div>
             </div>
-            <div class="houses__item">
+            <div
+              class="houses__item wow animate__animated animate__fadeInRight">
               <div class="houses__item-info">
                 <h3 class="houses__item-title">6233 Truman Dr</h3>
                 <div class="houses__item-box">
@@ -475,7 +486,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
             </div>
-            <div class="houses__item">
+            <div class="houses__item wow animate__animated animate__fadeInLeft">
               <div id="secondHousesSlider" class="houses__slider swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide houses__slider-slide">
@@ -572,7 +583,8 @@
                 </div>
               </div>
             </div>
-            <div class="houses__item houses__item--hidden">
+            <div
+              class="houses__item houses__item--hidden wow animate__animated animate__fadeIn">
               <div class="houses__item-info">
                 <h3 class="houses__item-title">6233 Truman Dr</h3>
                 <div class="houses__item-box">
@@ -669,7 +681,8 @@
                 <div class="swiper-button-prev"></div>
               </div>
             </div>
-            <div class="houses__item houses__item--hidden">
+            <div
+              class="houses__item houses__item--hidden wow animate__animated animate__fadeInRight">
               <div id="secondHousesSlider" class="houses__slider swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide houses__slider-slide">
@@ -1116,6 +1129,7 @@
     </footer>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <script src="js/wow.min.js"></script>
     <script src="js/flatpickr.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/payrentPopup.js"></script>

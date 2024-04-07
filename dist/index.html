@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
     <title>Apestates</title>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__info">
+        <div class="header__info wow animate__animated animate__fadeIn">
           <p class="header__info-address">
             6300 West AdamsBelleville, Michigan 48111
           </p>
@@ -22,7 +22,9 @@
             <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
           </div>
         </div>
-        <div class="header__inner">
+        <div
+          class="header__inner wow animate__animated animate__fadeIn"
+          data-wow-delay=".5s">
           <div class="logo">
             <a class="logo__link" href="index.html">
               <img src="images/logo.svg" alt="Logotype" />
@@ -169,29 +171,41 @@
         <div class="container">
           <div class="top-section__inner">
             <div class="top-section__text">
-              <p class="">
+              <p
+                class="wow animate__animated animate__fadeIn"
+                data-wow-delay=".7s">
                 Come live in a Manufactured Home Community that you can call
                 home, while building equity and maximizing the value of each
                 dollar you spend on housing.
               </p>
             </div>
-            <h1 class="top-section__title global-title">community for life</h1>
+            <h1
+              class="top-section__title global-title wow animate__animated animate__fadeIn"
+              data-wow-delay=".9s">
+              community for life
+            </h1>
           </div>
         </div>
       </section>
       <section class="section about">
         <div class="container">
           <div class="about__inner">
-            <h5 class="about__title section-subtitle">About us</h5>
+            <h5
+              class="about__title section-subtitle wow animate__fadeInLeft animate__animated">
+              About us
+            </h5>
             <div class="about__item">
-              <div class="about__item-image">
+              <div
+                class="about__item-image wow animate__fadeIn animate__animated">
                 <img
                   class="about__item-img"
                   src="images/about-img.jpg"
                   alt="About us image" />
               </div>
               <div class="about__item-box">
-                <div class="about__item-text">
+                <div
+                  class="about__item-text wow animate__fadeIn animate__animated"
+                  data-wow-delay=".3s">
                   <p>
                     Louis El'Chonen was born and raised in Michigan and has been
                     a developer of quality residential and commercial properties
@@ -209,7 +223,9 @@
                     Presidential Estates & Capitol Hills.
                   </p>
                 </div>
-                <div class="about__item-text">
+                <div
+                  class="about__item-text wow animate__fadeIn animate__animated"
+                  data-wow-delay=".5s">
                   <p>
                     American Presidential Estates & Capitol Hills are proud
                     members of Michigan Manufactured Housing and RV Association
@@ -232,16 +248,25 @@
 
       <section class="section welcome">
         <div class="container">
-          <h2 class="global-title">welcome home</h2>
+          <h2
+            class="global-title wow animate__fadeIn animate__animated"
+            data-wow-offset="100">
+            welcome home
+          </h2>
         </div>
       </section>
 
       <section class="section available">
         <div class="container">
           <div class="available__inner">
-            <h5 class="available__title section-subtitle">Available homes</h5>
+            <h5
+              class="available__title section-subtitle wow animate__fadeInLeft animate__animated">
+              Available homes
+            </h5>
             <div class="available__wrapper">
-              <div class="available__info">
+              <div
+                class="available__info wow animate__fadeIn animate__animated"
+                data-wow-delay=".3s">
                 <h4 class="available__info-title section-title">
                   Want to Buy a House?
                 </h4>
@@ -251,7 +276,9 @@
                   started on your journey to a new home.
                 </p>
               </div>
-              <div class="available__box">
+              <div
+                class="available__box wow animate__fadeIn animate__animated"
+                data-wow-delay=".5s">
                 <a href="catalogue.html" class="available__link"
                   >Watch full catalogue
                   <svg
@@ -309,7 +336,8 @@
               </div>
             </div>
           </div>
-          <div class="available__slider swiper">
+          <div
+            class="available__slider swiper wow animate__fadeIn animate__animated">
             <div class="available__slider-wrapper swiper-wrapper">
               <div class="available__slider-slide swiper-slide">
                 <div class="available__slider-image">
@@ -752,6 +780,7 @@
       </div>
     </footer>
 
+    <script src="js/wow.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="js/payrentPopup.js"></script>
     <script src="js/menu.js"></script>

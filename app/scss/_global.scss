@@ -142,6 +142,9 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  .wow {
+    animation: none;
+  }
   body {
     background: $white;
   }

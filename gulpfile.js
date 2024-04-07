@@ -43,22 +43,22 @@ function scripts() {
     // 'node_modules/swiper/swiper-bundle.min.js',
 
     // 'app/js/swiper.js'
-    // 'app/js/menu.js'
+    'app/js/menu.js'
     // 'app/js/main.js'
     // 'app/js/community.js'
     // 'app/js/faq.js'
-    'app/js/catalogue.js'
+    // 'app/js/catalogue.js'
     // 'app/js/homeDetails.js'
     // 'app/js/news.js'
     // 'app/js/payrentPopup.js'
   ])
     // .pipe(concat('homeDetails.min.js'))
     // .pipe(concat('payrentPopup.min.js'))
-    .pipe(concat('catalogue.min.js'))
+    // .pipe(concat('catalogue.min.js'))
     // .pipe(concat('news.min.js'))
     // .pipe(concat('faq.min.js'))
     // .pipe(concat('community.min.js'))
-    // .pipe(concat('menu.min.js'))
+    .pipe(concat('menu.min.js'))
     // .pipe(concat('main.min.js'))
     // .pipe(concat('swiper.min.js'))
     // .pipe(uglify())
@@ -92,6 +92,7 @@ function build() {
     'app/js/catalogue.js',
     'app/js/payrentPopup.js',
     'app/js/flatpickr.min.js',
+    'app/js/wow.min.js',
     'app/js/menu.js',
     'app/*.html'
   ], { base: 'app' })
