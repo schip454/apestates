@@ -1,0 +1,251 @@
+.section {
+}
+.houses {
+  &__items {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  &__item {
+    display: flex;
+    gap: 60px;
+    &:nth-child(odd) {
+      margin-left: 100px;
+    }
+    &:nth-child(even) {
+      margin-right: 100px;
+    }
+    &.more {
+      .houses__item-box--request {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        .section-link {
+          display: none;
+        }
+        .houses__item-requestbtn {
+          width: 100%;
+          max-width: none;
+          display: block;
+        }
+      }
+      .houses__item-phone {
+        display: none;
+      }
+    }
+  }
+  &__item--hidden {
+    display: none;
+  }
+  &__item-info {
+    max-width: 400px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $secondary-colors-grey-2;
+  }
+  &__item-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+  &__item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .section-link {
+      height: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &__item-box--request {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    sup {
+      margin-top: -8px;
+    }
+  }
+  &__list-img {
+    margin-right: 10px;
+  }
+  &__item-buttons {
+    display: flex;
+
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item-btn {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $secondary-colors-grey;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    path {
+      stroke: $secondary-colors-grey;
+    }
+  }
+  &__item-rent {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    span {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      color: $secondary-colors-grey;
+    }
+  }
+  &__item-phone {
+    display: flex;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    flex-direction: column;
+    // align-items: center;
+    align-items: end;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    span {
+      color: $secondary-colors-grey;
+    }
+  }
+  &__item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    font-family: $second-family;
+    span {
+      font-family: $font-family;
+      font-weight: 400;
+      color: $secondary-colors-grey;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+    }
+  }
+  &__slider {
+    margin: 0;
+    max-width: 840px;
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      color: $main-colors-white;
+    }
+  }
+  &__slider-slide {
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__controls-topbtn {
+    text-transform: uppercase;
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__controls-more {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: $main-colors-accent;
+    border-bottom: 1px solid $main-colors-accent;
+    padding: 0;
+  }
+  &__item-requestbtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .houses__item:nth-child(odd) {
+    margin-left: 0;
+  }
+  .houses__item:nth-child(even) {
+    margin-right: 0;
+  }
+  .houses__item {
+    flex-direction: column;
+  }
+  .houses__slider {
+    order: -1;
+  }
+  .houses__slider {
+    max-width: none;
+    img {
+      width: 100%;
+    }
+  }
+  .houses__item-info {
+    max-width: none;
+  }
+  .houses__item-box:nth-child(3) {
+    margin-bottom: 57px;
+  }
+  .houses__item-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .houses__slider {
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-size: 30px;
+    }
+  }
+  .houses__item {
+    gap: 20px;
+  }
+  .houses__item-title {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 20px;
+  }
+  .houses__item-box .section-link {
+    max-width: 155px;
+  }
+  .houses__controls-topbtn {
+    display: none;
+  }
+  .pagination__list {
+    display: none;
+  }
+  .houses__controls {
+    justify-content: center;
+  }
+}

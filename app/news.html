@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
+    <title>Apestates</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <p class="header__info-address">
+            6300 West AdamsBelleville, Michigan 48111
+          </p>
+          <div class="header__info-box">
+            <a href="tel:7344833700" class="header__info-phone">
+              <img src="images/phone-ico.svg" alt="Phone Icon" />734-483-3700</a
+            >
+            <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
+          </div>
+        </div>
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img src="images/logo.svg" alt="Logotype" />
+              <p class="logo__text">
+                American Presidential Estates & Capitol Hill
+              </p>
+            </a>
+          </div>
+
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="catalogue.html" class="header__menu-link"
+                  >Available homes</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="community.html" class="header__menu-link">Community</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="tenants.html" class="header__menu-link"
+                  >Become tenants</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="faq.html" class="header__menu-link">FAQ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <button id="payrentBtn" class="header__menu-link">
+                  Pay rent
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a href="news.html" class="header__menu-link">For tenants</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="menu">
+            <div class="menu__inner">
+              <button class="menu__close">
+                <span></span>
+                <span></span>
+              </button>
+              <div class="menu__box">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="catalogue.html" class="menu__list-link"
+                      >Available homes</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="community.html" class="menu__list-link"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="tenants.html" class="menu__list-link"
+                      >Become tenants</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="faq.html" class="menu__list-link">FAQ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="contacts.html" class="menu__list-link">Contacts</a>
+                  </li>
+                </ul>
+
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <button id="payrentBtnMobile" class="menu__list-link">
+                      Pay rent
+                    </button>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="news.html" class="menu__list-link">For tenants</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu__info">
+                <div class="menu__info-box">
+                  <a href="tel:7344833700" class="menu__info-phone">
+                    <img
+                      src="images/phone-ico.svg"
+                      alt="Phone Icon" />734-483-3700</a
+                  >
+                  <p class="menu__info-worktime">Today: 9:00 am to 5:00 pm</p>
+                </div>
+                <p class="menu__info-address">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="payrentPopup" class="popup popup--payrent">
+      <div class="popup__content">
+        <button class="popup__close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M31 31L0.999999 1M31 1L1 31" stroke="#151515" />
+          </svg>
+        </button>
+        <h2 class="popup__title">How to pay rent</h2>
+        <p class="popup__text">Use one of these options to pay rent</p>
+        <div class="popup__info">
+          <h4 class="popup__info-title">By mail</h4>
+          <p class="popup__info-text">
+            6300 West Adams Belleville, Michigan 48111
+          </p>
+          <div class="popup__line">OR</div>
+
+          <div class="popup__info">
+            <h4 class="popup__info-title">Online payment</h4>
+            <a href="#" class="popup__info-btn section-link">Click to pay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="title-section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="index.html" class="breadcrumbs__list-link">Home</a>
+              </li>
+              /
+              <li class="breadcrumbs__list-item">
+                <span class="breadcrumbs__list-current"> For tenants</span>
+              </li>
+            </ul>
+          </div>
+          <h2 class="global-title">news and events</h2>
+        </div>
+      </section>
+      <section class="section news-page">
+        <div class="container">
+          <div class="news-page__inner">
+            <div class="news-page__image">
+              <img
+                src="./images/news-bg.jpg"
+                alt="Some pic"
+                class="news-page-img" />
+            </div>
+            <div class="news-page__slider">
+              <div class="swiper-pagination news-page__slide-pagination"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide news-page__slide">
+                  <h3 class="news-page__slide-title">
+                    The community wide yard sale is scheduled for September 6th
+                    – September 8th. From 9:00 a.m. to 6:00 p.m.
+                  </h3>
+                  <div class="news-page__slide-box">
+                    <p class="news-page__slide-text">
+                      Please make sure that all items are put away each night.
+                      We will be putting signs out by the entrances of the
+                      community and also placing an ad on Craigslist. If you
+                      plan on participating we ask that you only place a sign in
+                      front of your yard.
+                    </p>
+
+                    <div class="news-page__controls">
+                      <button class="news-page__slider-prev">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            transform="matrix(-1 0 0 1 30 0)"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M18.8999 24L9.8999 15L18.8999 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                      <button class="news-page__slider-next">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M11.1001 24L20.1001 15L11.1001 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide news-page__slide">
+                  <h3 class="news-page__slide-title">
+                    The community wide yard sale is scheduled for
+                  </h3>
+                  <div class="news-page__slide-box">
+                    <p class="news-page__slide-text">
+                      Please make sure that all items are put away each night.
+                      We will be putting signs out by the entrances of the
+                      community and also placing an ad on Craigslist.
+                    </p>
+
+                    <div class="news-page__controls">
+                      <button class="news-page__slider-prev">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            transform="matrix(-1 0 0 1 30 0)"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M18.8999 24L9.8999 15L18.8999 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                      <button class="news-page__slider-next">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M11.1001 24L20.1001 15L11.1001 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide news-page__slide">
+                  <h3 class="news-page__slide-title">
+                    The community wide yard sale is scheduled for September 6th
+                    – September 8th. From 9:00 a.m. to 6:00 p.m.
+                  </h3>
+                  <div class="news-page__slide-box">
+                    <p class="news-page__slide-text">
+                      Please make sure that all items are put away each night.
+                      We will be putting signs out by the entrances of the
+                      community and also placing
+                    </p>
+
+                    <div class="news-page__controls">
+                      <button class="news-page__slider-prev">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            transform="matrix(-1 0 0 1 30 0)"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M18.8999 24L9.8999 15L18.8999 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                      <button class="news-page__slider-next">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14.55"
+                            stroke="#181818"
+                            stroke-width="0.9" />
+                          <path
+                            d="M11.1001 24L20.1001 15L11.1001 5.99999"
+                            stroke="#181818"
+                            stroke-width="0.9"
+                            stroke-linecap="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contacts__info">
+              <h2 class="section-title--big">Our contacts</h2>
+              <img
+                src="images/contacts-1.jpg"
+                alt="Image"
+                class="contacts__img" />
+            </div>
+            <div class="contacts__items">
+              <div class="contacts__item">
+                <h4 class="contacts__item-title">Phone</h4>
+                <ul class="contacts__list">
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">Phone</p>
+                    <a href="tel:7344833700" class="contacts__list-link"
+                      >734-483-3700</a
+                    >
+                  </li>
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">Fax</p>
+                    <a href="tel:7344831292" class="contacts__list-link"
+                      >734-483-1292</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__item">
+                <h4 class="contacts__item-title">Address</h4>
+                <ul class="contacts__list">
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">
+                      6300 West AdamsBelleville, Michigan 48111
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__item">
+                <h4 class="contacts__item-title">Emails</h4>
+                <ul class="contacts__list">
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">General Information:</p>
+                    <a
+                      href="mailto:info@apestates.com "
+                      class="contacts__list-link"
+                      >info@apestates.com
+                    </a>
+                  </li>
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">Maintenance Request:</p>
+                    <a
+                      href="mailto:info@apestates.com"
+                      class="contacts__list-link"
+                      >info@apestates.com
+                    </a>
+                  </li>
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">Comments:</p>
+                    <a
+                      href="mailto:comments@apestates.com"
+                      class="contacts__list-link"
+                      >comments@apestates.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__item">
+                <h4 class="contacts__item-title">Working hours</h4>
+                <ul class="contacts__list">
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">
+                      Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                    </p>
+                  </li>
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">
+                      Wednesday: 9:00 am to 6:00 pm
+                    </p>
+                  </li>
+                  <li class="contacts__list-item">
+                    <p class="contacts__list-text">
+                      Friday: 9:00 am to 4:00 pm
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section numbers">
+        <div class="container">
+          <div class="numbers__inner">
+            <div class="numbers__info">
+              <h2 class="section-title--big">Local Numbers of Interest</h2>
+              <h3 class="section-title">
+                A listing on this page does not constitute an endorsement,
+                please ask all contractors and service companies for proof of
+                insurance and license prior to service.
+              </h3>
+            </div>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">Utility & Communal</h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">
+                  Utility & Communal Belleville Chamber of Commerce
+                </p>
+                <p class="numbers__list-num">734 697 7151</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Belleville Post office</p>
+                <p class="numbers__list-num">800 275 8777</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Comcast Cablevision</p>
+                <p class="numbers__list-num">734 729 7300</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Huron Valley Ambulance</p>
+                <p class="numbers__list-num">734 697 7900</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">
+                  Utilities: Gas & Electric (DTE)
+                </p>
+                <p class="numbers__list-num">800 477 4747</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Van Buren Township</p>
+                <p class="numbers__list-num">734 699 8900</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">
+                  VBT Police & Fire, general info.
+                </p>
+                <p class="numbers__list-num">734 699 8930</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Lincoln Consolidated Schools</p>
+                <p class="numbers__list-num">734 484 7000</p>
+              </li>
+            </ul>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">
+                Licensed Manufactured Home Service Companies
+              </h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">ABCO</p>
+                <p class="numbers__list-num">734 461 0240</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Anderson Mobile Home Repair</p>
+                <p class="numbers__list-num">734 782 2380</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Capitol Supply</p>
+                <p class="numbers__list-num">800 473 1180</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Dennis's Mobile Home Service</p>
+                <p class="numbers__list-num">7734 722 9340</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">K&F Electric</p>
+                <p class="numbers__list-num">734 429 1250</p>
+              </li>
+            </ul>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">Lawn Care Services</h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">
+                  Back to Nature, Fertilization & Weed Control
+                </p>
+                <p class="numbers__list-num">734 973 5800</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Precison Services</p>
+                <p class="numbers__list-num">734 945 3491</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Patriot Lawn Care</p>
+                <p class="numbers__list-num">734 828 7425</p>
+              </li>
+            </ul>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">Home Repair and Maintenance</h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Belleville Locksmith</p>
+                <p class="numbers__list-num">734 697 0800</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Diversified Roofing</p>
+                <p class="numbers__list-num">800-668-1928</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">
+                  Doc & Sons II Carpet & Uphol. Cleaning
+                </p>
+                <p class="numbers__list-num">734 425 4626</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Tri County Water & Sewer</p>
+                <p class="numbers__list-num">734 320 2822</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Mr. Drain</p>
+                <p class="numbers__list-num">734 891 DRAIN</p>
+              </li>
+            </ul>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">Pest Removal Services</h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Pest Removal Services</p>
+                <p class="numbers__list-num">734 285 3200</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Animal Removal Services</p>
+                <p class="numbers__list-num">800 359 2311</p>
+              </li>
+            </ul>
+            <ul class="numbers__list">
+              <h4 class="numbers__list-title">Homeowners Insurance</h4>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Homeowners Insurance</p>
+                <p class="numbers__list-num">734 285 3200</p>
+              </li>
+              <li class="numbers__list-item">
+                <p class="numbers__list-text">Detlor Insurance Agency</p>
+                <p class="numbers__list-num">734 697 6000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="logo">
+                <a class="logo__link" href="index.html">
+                  <img src="images/white-logo.svg" alt="Logotype " />
+                  <p class="logo__text">
+                    American Presidential Estates & Capitol Hill
+                  </p>
+                </a>
+              </div>
+              <div class="footer__info-lists">
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Available homes</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Community</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">About us</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Become tenants</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">FAQ</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Contacts</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Pay rent </a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">For tenants</a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link"
+                      >National Homes of Michigan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copy">
+                American Presidential Estates & Capitol Hill © 2020.
+                <span> All rights reserved</span>
+              </p>
+            </div>
+            <div class="footer__contacts">
+              <h4 class="footer__contacts-title">Contacts</h4>
+
+              <div class="footer__contacts-inner">
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      Phone:
+                      <a href="tel:7344833700" class="footer__contacts-link"
+                        >734-483-3700
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Fax:
+                      <a href="tel:7344831292" class="footer__contacts-link"
+                        >734-483-1292
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      General Information:
+                      <a
+                        href="mailto:info@apestates.com "
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Maintenance Request:
+                      <a
+                        href="mailto:info@apestates.com"
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Comments:
+                      <a
+                        href="mailto:comments@apestates.com"
+                        class="footer__contacts-link"
+                        >comments@apestates.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        6300 West AdamsBelleville, Michigan 48111
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Wednesday: 9:00 am to 6:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Friday: 9:00 am to 4:00 pm
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="footer__contacts-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                      width="370"
+                      height="200"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contacts--mobile">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Wednesday: 9:00 am to 6:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">Friday: 9:00 am to 4:00 pm</p>
+              </li>
+            </ul>
+            <div class="footer__contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                width="370"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer__copy">
+              American Presidential Estates & Capitol Hill © 2020.
+              <span> All rights reserved</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="js/payrentPopup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/news.js"></script>
+  </body>
+</html>

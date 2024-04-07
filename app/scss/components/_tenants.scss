@@ -1,0 +1,146 @@
+.tenants {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    max-width: 440px;
+  }
+  &__img {
+  }
+  &__info {
+    max-width: 818px;
+  }
+  &__title {
+    margin-bottom: 37px;
+  }
+  &__list {
+    counter-reset: tenants-counter;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 680px;
+  }
+  &__list-item {
+    position: relative;
+    padding-left: 78px;
+    &::before {
+      counter-increment: tenants-counter;
+      content: counter(tenants-counter);
+      width: 58px;
+      height: 58px;
+      border: 1px solid $main-colors-dark;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $second-family;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 130%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__list-text {
+    max-width: 351px;
+  }
+  &__list-fulltext {
+    max-width: none;
+    margin-bottom: 4px;
+  }
+  &__list-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  &__list-info {
+    display: flex;
+    gap: 8px;
+    align-items: start;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+  &__list-img {
+    padding: 5px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tenants__info {
+    max-width: 634px;
+  }
+  .tenants__inner {
+    gap: 60px;
+  }
+  .tenants__img {
+    max-width: 270px;
+    height: 262px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+  .tenants__list-text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+  }
+  .tenants__list-img {
+    padding: 0;
+  }
+  .tenants__list-item {
+    min-height: 58px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tenants__inner {
+    flex-direction: column;
+  }
+  .tenants__img {
+    max-width: none;
+    height: 363px;
+    width: 100%;
+  }
+  .tenants__image,
+  .tenants__info {
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tenants__img {
+    height: 166px;
+  }
+  .tenants__inner {
+    gap: 20px;
+  }
+  .tenants__title {
+    margin-bottom: 30px;
+  }
+  .tenants__list-item::before {
+    width: 50px;
+    height: 50px;
+  }
+  .tenants__list-item {
+    padding-left: 70px;
+  }
+  .tenants__list-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+    max-width: 260px;
+  }
+  .tenants__list-box {
+    align-items: start;
+  }
+  .tenants__list {
+    gap: 20px;
+  }
+  .tenants__list-box {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

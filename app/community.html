@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
+    <title>Apestates</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <p class="header__info-address">
+            6300 West AdamsBelleville, Michigan 48111
+          </p>
+          <div class="header__info-box">
+            <a href="tel:7344833700" class="header__info-phone">
+              <img src="images/phone-ico.svg" alt="Phone Icon" />734-483-3700</a
+            >
+            <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
+          </div>
+        </div>
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img src="images/logo.svg" alt="Logotype" />
+              <p class="logo__text">
+                American Presidential Estates & Capitol Hill
+              </p>
+            </a>
+          </div>
+
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="catalogue.html" class="header__menu-link"
+                  >Available homes</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="community.html" class="header__menu-link">Community</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="tenants.html" class="header__menu-link"
+                  >Become tenants</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="faq.html" class="header__menu-link">FAQ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <button id="payrentBtn" class="header__menu-link">
+                  Pay rent
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a href="news.html" class="header__menu-link">For tenants</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="menu">
+            <div class="menu__inner">
+              <button class="menu__close">
+                <span></span>
+                <span></span>
+              </button>
+              <div class="menu__box">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="catalogue.html" class="menu__list-link"
+                      >Available homes</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="community.html" class="menu__list-link"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="tenants.html" class="menu__list-link"
+                      >Become tenants</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="faq.html" class="menu__list-link">FAQ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="contacts.html" class="menu__list-link">Contacts</a>
+                  </li>
+                </ul>
+
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <button id="payrentBtnMobile" class="menu__list-link">
+                      Pay rent
+                    </button>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="news.html" class="menu__list-link">For tenants</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu__info">
+                <div class="menu__info-box">
+                  <a href="tel:7344833700" class="menu__info-phone">
+                    <img
+                      src="images/phone-ico.svg"
+                      alt="Phone Icon" />734-483-3700</a
+                  >
+                  <p class="menu__info-worktime">Today: 9:00 am to 5:00 pm</p>
+                </div>
+                <p class="menu__info-address">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="payrentPopup" class="popup popup--payrent">
+      <div class="popup__content">
+        <button class="popup__close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M31 31L0.999999 1M31 1L1 31" stroke="#151515" />
+          </svg>
+        </button>
+        <h2 class="popup__title">How to pay rent</h2>
+        <p class="popup__text">Use one of these options to pay rent</p>
+        <div class="popup__info">
+          <h4 class="popup__info-title">By mail</h4>
+          <p class="popup__info-text">
+            6300 West Adams Belleville, Michigan 48111
+          </p>
+          <div class="popup__line">OR</div>
+
+          <div class="popup__info">
+            <h4 class="popup__info-title">Online payment</h4>
+            <a href="#" class="popup__info-btn section-link">Click to pay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="title-section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="index.html" class="breadcrumbs__list-link">Home</a>
+              </li>
+              /
+              <li class="breadcrumbs__list-item">
+                <span class="breadcrumbs__list-current">Community</span>
+              </li>
+            </ul>
+          </div>
+          <h2 class="global-title">About community</h2>
+        </div>
+      </section>
+
+      <section class="section about-community">
+        <div class="container">
+          <div class="about-community__inner">
+            <h5 class="section-subtitle about-community__title--mobile">
+              About our community
+            </h5>
+
+            <div class="about-community__left">
+              <h5 class="section-subtitle">About our community</h5>
+              <div class="about-community__item">
+                <img
+                  src="images/about-community-1.jpg"
+                  alt="Some photo"
+                  class="about-community__img" />
+                <p class="about-community__item-text">
+                  American Presidential Estates & Capitol Hills are an
+                  opportunity to become part of a manufactured home community of
+                  families who care about their homes, their neighborhood, and
+                  their neighbors.
+                </p>
+              </div>
+            </div>
+            <div class="about-community__info">
+              <h4 class="about-community__title section-title">
+                A place where you will feel happy and relaxed. We created a
+                community that you would be proud to come home to.
+              </h4>
+              <div class="about-community__textbox">
+                <p class="about-community__text">
+                  If you are sick and tired of paying rent without building any
+                  equity; if you are fed up with not having enough room; if you
+                  have decided that you and your family deserve better, and if
+                  you are committed to do something about it.
+                </p>
+                <p class="about-community__text">
+                  Then we invite you to visit the Manufactured Home Communities
+                  of American Presidential Estates & Capitol Hills and see what
+                  we created for Michigan families who deserve the best.
+                </p>
+              </div>
+              <div class="about-community__photo">
+                <img
+                  src="images/about-community-2.jpg"
+                  alt="Some photo"
+                  class="about-community__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section video">
+        <div class="container">
+          <div class="video__inner">
+            <div class="video__info">
+              <h4 class="video__title section-title">
+                We’re not just another mobile home park. Сheck this out!
+              </h4>
+
+              <p class="video__text">
+                The entire community has a true residential neighborhood feel
+                and not that old style mobile home / trailer park look. You see
+                it and so do your guests.
+              </p>
+            </div>
+          </div>
+
+          <div class="video__items">
+            <div class="video__item">
+              <button class="video__item-play">
+                <svg
+                  width="40"
+                  height="46"
+                  viewBox="0 0 40 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.0078 22.9994L0.247221 45.9469L0.247223 0.0519373L40.0078 22.9994Z"
+                    fill="#002664" />
+                </svg>
+              </button>
+              <img src="images/video-thumb-1.jpg" />
+            </div>
+
+            <div class="video__item">
+              <img src="images/video-thumb-2.jpg" />
+            </div>
+
+            <div class="video__item">
+              <img src="images/video-thumb-3.jpg" />
+            </div>
+
+            <div class="video__item">
+              <img src="images/video-thumb-4.jpg" />
+            </div>
+
+            <div class="video__item">
+              <img src="images/video-thumb-5.jpg" />
+            </div>
+
+            <div class="video__thumbs-wrapper">
+              <div class="video__thumbs">
+                <div class="video__thumb">
+                  <button class="video__thumb-play">
+                    <svg
+                      width="12"
+                      height="14"
+                      viewBox="0 0 12 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.2461 6.75L-0.00390686 13.2452L-0.00390629 0.254809L11.2461 6.75Z"
+                        fill="#002664" />
+                    </svg>
+                  </button>
+                  <img
+                    src="images/video-thumb-1-mini.jpg"
+                    onclick="currentSlide(1)"
+                    alt="" />
+                </div>
+                <div class="video__thumb">
+                  <img
+                    src="images/video-thumb-2.jpg"
+                    onclick="currentSlide(2)"
+                    alt="" />
+                </div>
+                <div class="video__thumb">
+                  <img
+                    src="images/video-thumb-3.jpg"
+                    onclick="currentSlide(3)"
+                    alt="" />
+                </div>
+                <div class="video__thumb">
+                  <img
+                    src="images/video-thumb-4.jpg"
+                    onclick="currentSlide(4)"
+                    alt="" />
+                </div>
+                <div class="video__thumb">
+                  <img
+                    src="images/video-thumb-5.jpg"
+                    onclick="currentSlide(5)"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features">
+        <div class="container">
+          <div class="features__inner">
+            <div class="features__info">
+              <h5 class="section-subtitle">Our features</h5>
+              <h4 class="features__title section-title">
+                Some of the features that our Homeowners have told us were
+                important to them in making their decision to buy a Manufactured
+                Home in American Presidential Estates and Capitol Hills.
+              </h4>
+            </div>
+            <ul class="features__list">
+              <li class="features__list-item">
+                <img
+                  src="images/features-1.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Safety</h6>
+                <p class="features__list-text">
+                  The local police and fire departments consider American
+                  Presidential Estates & Capitol Hills to be quiet and peaceful
+                  neighborhoods.
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-2.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Bus stop</h6>
+                <p class="features__list-text">
+                  We have in a in-community bus stop that picks up children to
+                  The Lincoln Consolidated School District. It’s just 10 minutes
+                  away.
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-3.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Leisure</h6>
+                <p class="features__list-text">
+                  Stocked fishing pond, picnic & nature area, tennis,
+                  basketball, roller courts, 3 separate park and play areas with
+                  playground equipment including an under 12 play park, Golf
+                  Courses and other actives to allow you to maximize your
+                  leisure time
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-4.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Lakes</h6>
+                <p class="features__list-text">
+                  Near Ford & Belleville Lakes with public access boat launches
+                  and one launch just a 0,5 mile away, park and beach areas.
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-5.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Friendly curbs</h6>
+                <p class="features__list-text">
+                  We created a neighborhood with curb appeal. They are low
+                  enough for easy movement around the area.
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-6.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Amenity</h6>
+                <p class="features__list-text">
+                  That all sites have off and on street parking, metered city
+                  water & sewer, weekly curbside trash, recycling, and yard
+                  waste pick-up
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-7.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Management</h6>
+                <p class="features__list-text">
+                  On site management to address your concerns promptly and a 24
+                  Hour Emergency Line
+                </p>
+              </li>
+              <li class="features__list-item">
+                <img
+                  src="images/features-8.jpg"
+                  alt="Features image"
+                  class="features__list-img" />
+                <h6 class="features__list-title">Personal address</h6>
+                <p class="features__list-text">
+                  Having an actual address and not just a lot number
+                </p>
+              </li>
+              <li class="features__list-item">
+                <div
+                  class="features__list-img features__list-img--circle"></div>
+                <h6 class="features__list-title">24 hour emergency service</h6>
+                <p class="features__list-text">Text about emergency service</p>
+              </li>
+            </ul>
+            <div class="features__link-box">
+              <a href="catalogue.html" class="section-link features__link"
+                >Explore available houses</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section advantages"
+        style="background-image: url(./images/advantages-bg.jpg)">
+        <div class="container">
+          <div class="advantages__inner">
+            <div class="advantages__info">
+              <h5 class="section-subtitle advantages__subtitle">Advantages</h5>
+              <h3 class="advantages__title section-title">
+                Why people chose American Presidential Estates & Capitol Hill
+              </h3>
+            </div>
+            <div class="advantages__items">
+              <div class="advantages__item">
+                <img
+                  src="images/advantages-1.svg"
+                  alt="Icon"
+                  class="advantages__item-img" />
+                <h4 class="advantages__item-title">
+                  Community News and Events
+                </h4>
+                <p class="advantages__item-text">
+                  Contacts and Local Numbers <br />
+                  of interest
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img
+                  src="images/advantages-2.svg"
+                  alt="Icon"
+                  class="advantages__item-img" />
+                <h4 class="advantages__item-title">City sewerage</h4>
+                <p class="advantages__item-text">
+                  All our houses are connected to the <br />
+                  city sewerage and water supply
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img
+                  src="images/advantages-3.svg"
+                  alt="Icon"
+                  class="advantages__item-img" />
+                <h4 class="advantages__item-title">Care about neighborhood</h4>
+                <p class="advantages__item-text">
+                  We care about keeping the neighborhood looking its best. It’s
+                  the way of living and doing business that will help keep
+                  resale values high.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map">
+        <div class="container">
+          <div class="map__info">
+            <h5 class="section-subtitle">Location</h5>
+            <h4 class="map__title section-title">
+              Being only 2 miles from I-94, people enjoy the fact that we are
+              centrally located to major employment centers, Houses of Worship,
+              shopping areas, and recreational activities.
+            </h4>
+          </div>
+          <div class="map__item">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d88066.84917624106!2d-83.56553614430027!3d42.242794102093384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1710602033013!5m2!1sen!2sru"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="testimonials__inner">
+            <div class="testimonials__info">
+              <h5 class="section-subtitle">Testimonials</h5>
+              <div class="testimonials__box">
+                <h3 class="testimonials__title section-title">
+                  Happy Tenants words
+                </h3>
+                <div class="testimonials__controls">
+                  <button class="testimonials__slider-prev">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="15"
+                        cy="15"
+                        r="14.55"
+                        transform="matrix(-1 0 0 1 30 0)"
+                        stroke="#181818"
+                        stroke-width="0.9" />
+                      <path
+                        d="M18.8999 24L9.8999 15L18.8999 5.99999"
+                        stroke="#181818"
+                        stroke-width="0.9"
+                        stroke-linecap="round" />
+                    </svg>
+                  </button>
+                  <button class="testimonials__slider-next">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="15"
+                        cy="15"
+                        r="14.55"
+                        stroke="#181818"
+                        stroke-width="0.9" />
+                      <path
+                        d="M11.1001 24L20.1001 15L11.1001 5.99999"
+                        stroke="#181818"
+                        stroke-width="0.9"
+                        stroke-linecap="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__slider">
+              <div class="testimonials__slider-wrapper swiper-wrapper">
+                <div class="testimonials__slider-slide swiper-slide">
+                  <div class="testimonials__slider-box">
+                    <img
+                      src="images/testimonials-1.jpg"
+                      alt="Avatar"
+                      class="testimonials__slider-img" />
+                    <div class="testimonials__slider-author">
+                      <img
+                        src="images/fb-ico.svg"
+                        alt="FaceBook Icon"
+                        class="testimonials__slider-icon" />
+                      <p class="testimonials__slider-name">Rene T., retiree</p>
+                    </div>
+                  </div>
+                  <p class="testimonials__slider-text">
+                    "When I retired I moved to Florida. But soon after I
+                    realized that I missed my family and friends so I decided to
+                    move back to Michigan, for at least part of the year. I
+                    needed a home that would be low maintenance and affordable.
+                    A former co-worker friend of mine told me about American
+                    Presidential Estates and how she liked living there. I
+                    stopped by and spoke to Jenifer in their office; she was
+                    very helpful and informative. I saw a house I liked and
+                    bought it. Since moving in to the Community the staff has
+                    made me feel like I was part of their family while being
+                    close to my family."
+                  </p>
+                </div>
+                <div class="testimonials__slider-slide swiper-slide">
+                  <div class="testimonials__slider-box">
+                    <img
+                      src="images/testimonials-1.jpg"
+                      alt="Avatar"
+                      class="testimonials__slider-img" />
+                    <div class="testimonials__slider-author">
+                      <img
+                        src="images/fb-ico.svg"
+                        alt="FaceBook Icon"
+                        class="testimonials__slider-icon" />
+                      <p class="testimonials__slider-name">Rene T., retiree</p>
+                    </div>
+                  </div>
+                  <p class="testimonials__slider-text">
+                    "When I retired I moved to Florida. But soon after I
+                    realized that I missed my family and friends so I decided to
+                    move back to Michigan, for at least part of the year. I
+                    needed a home that would be low maintenance and affordable.
+                    A former co-worker friend of mine told me about American
+                    Presidential Estates and how she liked living there. I
+                    stopped by and spoke to Jenifer in their office; she was
+                    very helpful and informative. I saw a house I liked and
+                    bought it. Since moving in to the Community the staff has
+                    made me feel like I was part of their family while being
+                    close to my family."
+                  </p>
+                </div>
+                <div class="testimonials__slider-slide swiper-slide">
+                  <div class="testimonials__slider-box">
+                    <img
+                      src="images/testimonials-1.jpg"
+                      alt="Avatar"
+                      class="testimonials__slider-img" />
+                    <div class="testimonials__slider-author">
+                      <img
+                        src="images/fb-ico.svg"
+                        alt="FaceBook Icon"
+                        class="testimonials__slider-icon" />
+                      <p class="testimonials__slider-name">Rene T., retiree</p>
+                    </div>
+                  </div>
+                  <p class="testimonials__slider-text">
+                    "When I retired I moved to Florida. But soon after I
+                    realized that I missed my family and friends so I decided to
+                    move back to Michigan, for at least part of the year. I
+                    needed a home that would be low maintenance and affordable.
+                    A former co-worker friend of mine told me about American
+                    Presidential Estates and how she liked living there. I
+                    stopped by and spoke to Jenifer in their office; she was
+                    very helpful and informative. I saw a house I liked and
+                    bought it. Since moving in to the Community the staff has
+                    made me feel like I was part of their family while being
+                    close to my family."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials__explore">
+        <div class="container">
+          <div class="testimonials__explore-inner">
+            <img
+              src="images/testimonials-explore.jpg"
+              alt="Some Picture"
+              class="testimonials__explore-img" />
+            <div class="testimonials__explore-box">
+              <h3 class="testimonials__explore-title">
+                Come live in a Manufactured Home Community that you can call
+                home
+              </h3>
+              <p class="testimonials__explore-text">
+                Explore our catalogue to find your perfect home
+              </p>
+              <a
+                href="catalogue.html"
+                class="testimonials__explore-link section-link"
+                >Explore available houses</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--catalogue">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="logo">
+                <a class="logo__link" href="index.html">
+                  <img src="images/white-logo.svg" alt="Logotype " />
+                  <p class="logo__text">
+                    American Presidential Estates & Capitol Hill
+                  </p>
+                </a>
+              </div>
+              <div class="footer__info-lists">
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Available homes</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Community</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">About us</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Become tenants</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">FAQ</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Contacts</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Pay rent </a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">For tenants</a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link"
+                      >National Homes of Michigan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copy">
+                American Presidential Estates & Capitol Hill © 2020.
+                <span> All rights reserved</span>
+              </p>
+            </div>
+            <div class="footer__contacts">
+              <h4 class="footer__contacts-title">Contacts</h4>
+
+              <div class="footer__contacts-inner">
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      Phone:
+                      <a href="tel:7344833700" class="footer__contacts-link"
+                        >734-483-3700
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Fax:
+                      <a href="tel:7344831292" class="footer__contacts-link"
+                        >734-483-1292
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      General Information:
+                      <a
+                        href="mailto:info@apestates.com "
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Maintenance Request:
+                      <a
+                        href="mailto:info@apestates.com"
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Comments:
+                      <a
+                        href="mailto:comments@apestates.com"
+                        class="footer__contacts-link"
+                        >comments@apestates.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        6300 West AdamsBelleville, Michigan 48111
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Wednesday: 9:00 am to 6:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Friday: 9:00 am to 4:00 pm
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="footer__contacts-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                      width="370"
+                      height="200"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contacts--mobile">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Wednesday: 9:00 am to 6:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">Friday: 9:00 am to 4:00 pm</p>
+              </li>
+            </ul>
+            <div class="footer__contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                width="370"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer__copy">
+              American Presidential Estates & Capitol Hill © 2020.
+              <span> All rights reserved</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/payrentPopup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/community.js"></script>
+  </body>
+</html>

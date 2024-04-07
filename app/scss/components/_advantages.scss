@@ -1,0 +1,122 @@
+.advantages {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $main-colors-white;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 95px;
+    min-height: 680px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    font-weight: 400;
+    color: $main-colors-white;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    font-family: $second-family;
+    max-width: 634px;
+  }
+  &__items {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+  }
+  &__item {
+    max-width: 458px;
+    width: 100%;
+    background-color: $main-colors-white;
+    border-radius: 15px;
+    padding: 80px 12px 30px 30px;
+    color: $main-colors-dark;
+    position: relative;
+  }
+  &__item-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  &__item-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 7px;
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .advantages__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .advantages__inner {
+    min-height: 757px;
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .advantages__item {
+    max-width: 49%;
+    padding: 63px 16px 16px;
+    min-height: 181px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .advantages__item:last-child {
+    max-width: none;
+    .advantages__item-text {
+      max-width: 511px;
+    }
+  }
+  .advantages__item-title {
+    max-width: 215px;
+    margin-bottom: 16px;
+  }
+  .advantages__title {
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    max-width: 521px;
+  }
+  .advantages__inner {
+    min-height: 691px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .advantages__info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .advantages__item {
+    max-width: 100%;
+  }
+  .advantages__inner {
+    gap: 17px;
+    padding: 20px 0 30px;
+    min-height: auto;
+  }
+  .advantages__title {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+  }
+}

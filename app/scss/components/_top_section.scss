@@ -1,0 +1,121 @@
+.top-section {
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 714px;
+  &__inner {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    color: $main-colors-white;
+    min-height: 714px;
+    padding-bottom: 40px;
+  }
+  &__text {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    p {
+      max-width: 594px;
+    }
+  }
+  &__title {
+    max-width: 800px;
+    text-align: left;
+    color: $main-colors-white;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-section__title {
+    max-width: 682px;
+    margin-right: 0;
+  }
+  .top-section {
+    min-height: auto;
+  }
+  .top-section__text {
+    max-width: 682px;
+  }
+  .top-section__text p {
+    font-size: 15px;
+    line-height: 140%;
+    max-width: 502px;
+    letter-spacing: -0.01em;
+  }
+  .top-section__inner {
+    min-height: 634px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .top-section__inner {
+    min-height: calc(100vh - 99px);
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .top-section__text {
+    max-width: 385px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .top-section__title {
+    text-align: center;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    max-width: 452px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .top-section__inner {
+    padding-bottom: 40px;
+  }
+  .top-section__title {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    max-width: 283px;
+  }
+  .top-section__text p {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+  .top-section__text {
+    max-width: 330px;
+  }
+  .top-section__inner {
+    min-height: calc(100vh - 68px);
+  }
+  .menu__inner {
+    padding: 130px 36px 60px;
+  }
+  .menu {
+    max-width: 360px;
+  }
+  .menu__close {
+    top: 25px;
+    right: 25px;
+  }
+  .menu__info-address {
+    max-width: 221px;
+  }
+  .menu__list-item {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+  }
+  .menu__list {
+    gap: 30px;
+  }
+  .menu__box {
+    gap: 40px;
+  }
+}

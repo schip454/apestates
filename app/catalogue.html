@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apestates</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" /> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <p class="header__info-address">
+            6300 West AdamsBelleville, Michigan 48111
+          </p>
+          <div class="header__info-box">
+            <a href="tel:7344833700" class="header__info-phone">
+              <img src="images/phone-ico.svg" alt="Phone Icon" />734-483-3700</a
+            >
+            <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
+          </div>
+        </div>
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img src="images/logo.svg" alt="Logotype" />
+              <p class="logo__text">
+                American Presidential Estates & Capitol Hill
+              </p>
+            </a>
+          </div>
+
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="catalogue.html" class="header__menu-link"
+                  >Available homes</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="community.html" class="header__menu-link">Community</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="tenants.html" class="header__menu-link"
+                  >Become tenants</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="faq.html" class="header__menu-link">FAQ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <button id="payrentBtn" class="header__menu-link">
+                  Pay rent
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a href="news.html" class="header__menu-link">For tenants</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="menu">
+            <div class="menu__inner">
+              <button class="menu__close">
+                <span></span>
+                <span></span>
+              </button>
+              <div class="menu__box">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="catalogue.html" class="menu__list-link"
+                      >Available homes</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="community.html" class="menu__list-link"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="tenants.html" class="menu__list-link"
+                      >Become tenants</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="faq.html" class="menu__list-link">FAQ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="contacts.html" class="menu__list-link">Contacts</a>
+                  </li>
+                </ul>
+
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <button id="payrentBtnMobile" class="menu__list-link">
+                      Pay rent
+                    </button>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="news.html" class="menu__list-link">For tenants</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu__info">
+                <div class="menu__info-box">
+                  <a href="tel:7344833700" class="menu__info-phone">
+                    <img
+                      src="images/phone-ico.svg"
+                      alt="Phone Icon" />734-483-3700</a
+                  >
+                  <p class="menu__info-worktime">Today: 9:00 am to 5:00 pm</p>
+                </div>
+                <p class="menu__info-address">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="payrentPopup" class="popup popup--payrent">
+      <div class="popup__content">
+        <button class="popup__close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M31 31L0.999999 1M31 1L1 31" stroke="#151515" />
+          </svg>
+        </button>
+        <h2 class="popup__title">How to pay rent</h2>
+        <p class="popup__text">Use one of these options to pay rent</p>
+        <div class="popup__info">
+          <h4 class="popup__info-title">By mail</h4>
+          <p class="popup__info-text">
+            6300 West Adams Belleville, Michigan 48111
+          </p>
+          <div class="popup__line">OR</div>
+
+          <div class="popup__info">
+            <h4 class="popup__info-title">Online payment</h4>
+            <a href="#" class="popup__info-btn section-link">Click to pay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="title-section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="index.html" class="breadcrumbs__list-link">Home</a>
+              </li>
+              /
+              <li class="breadcrumbs__list-item">
+                <span class="breadcrumbs__list-current"> Catalogue</span>
+              </li>
+            </ul>
+          </div>
+          <h2 class="global-title">available homes</h2>
+        </div>
+      </section>
+
+      <section class="section houses">
+        <div class="container">
+          <div class="houses__items">
+            <div class="houses__item">
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6233 Truman Dr</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      1 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      2 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      857 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $300/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $87 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+              <div id="firstHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="houses__item">
+              <div id="secondHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6279 Lincoln Ct</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      3 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      4 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      1438 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $900/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $315 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="houses__item">
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6233 Truman Dr</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      1 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      2 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      857 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $300/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $87 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+              <div id="firstHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="houses__item">
+              <div id="secondHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6279 Lincoln Ct</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      3 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      4 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      1438 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $900/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $315 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="houses__item houses__item--hidden">
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6233 Truman Dr</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      1 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      2 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      857 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $300/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $87 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+              <div id="firstHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="houses__item houses__item--hidden">
+              <div id="secondHousesSlider" class="houses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-2.jpg" alt="Photo" />
+                  </div>
+                  <div class="swiper-slide houses__slider-slide">
+                    <img src="images/catalogue-1.jpg" alt="Photo" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="houses__item-info">
+                <h3 class="houses__item-title">6279 Lincoln Ct</h3>
+                <div class="houses__item-box">
+                  <ul class="houses__list">
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bath-ico.svg"
+                        alt="Bath Icon"
+                        class="houses__list-img" />
+
+                      3 bathrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/bed-ico.svg"
+                        alt="Bed Icon"
+                        class="houses__list-img" />
+
+                      4 bedrooms
+                    </li>
+                    <li class="houses__list-item">
+                      <img
+                        src="images/ft-ico.svg"
+                        alt="Ft Icon"
+                        class="houses__list-img" />
+
+                      1438 ft<sup>2</sup>
+                    </li>
+                  </ul>
+                  <div class="houses__item-buttons">
+                    <button class="houses__item-btn houses__item-planbtn">
+                      house plan
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                    <button class="houses__item-btn houses__item-mapbtn">
+                      community map
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 14L14 1M14 1V14M14 1H3.08"
+                          stroke="#232323" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="houses__item-box">
+                  <p class="houses__item-rent">
+                    $900/month
+                    <span>maintance</span>
+                  </p>
+                  <div class="houses__item-phone">
+                    <a href="tel:7345444663"
+                      ><img src="images/phone-icon.svg" alt="Phone Icon" />
+                      734-544-4663</a
+                    >
+                    <span>Contact us to get a tour</span>
+                  </div>
+                </div>
+                <div class="houses__item-box houses__item-box--request">
+                  <a href="home-details.html" class="section-link"
+                    >Home Details</a
+                  >
+                  <p class="houses__item-price">
+                    $315 000 <span>purchase price</span>
+                  </p>
+                  <button class="section-link houses__item-requestbtn">
+                    Request tour
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="houses__controls">
+            <button class="houses__controls-topbtn">
+              to top
+              <svg
+                width="8"
+                height="21"
+                viewBox="0 0 8 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.35355 0.146446C4.15829 -0.0488148 3.84171 -0.0488148 3.64645 0.146446L0.464467 3.32843C0.269205 3.52369 0.269205 3.84027 0.464467 4.03553C0.659729 4.2308 0.976311 4.2308 1.17157 4.03553L4 1.20711L6.82843 4.03553C7.02369 4.2308 7.34027 4.2308 7.53553 4.03553C7.7308 3.84027 7.7308 3.52369 7.53553 3.32843L4.35355 0.146446ZM4.5 20.5L4.5 0.5L3.5 0.5L3.5 20.5L4.5 20.5Z"
+                  fill="#181818" />
+              </svg>
+            </button>
+
+            <button class="houses__controls-more">Show 5 more</button>
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__list-item">
+                  <span class="pagination__list-link pagination__list-current"
+                    >1</span
+                  >
+                </li>
+                <li class="pagination__list-item">
+                  <a href="#" class="pagination__list-link">2</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a href="#" class="pagination__list-link">3</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a href="#" class="pagination__list-link">4</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a href="#" class="pagination__list-link">5</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="housePlanPopup" class="popup">
+      <button class="popup__close">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M31 31L0.999999 1M31 1L1 31" stroke="#F8F8F8" />
+        </svg>
+      </button>
+      <div class="popup__content">
+        <img src="images/house-plan.jpg" alt="House Plan" class="popup__img" />
+      </div>
+    </div>
+
+    <div id="communityMapPopup" class="popup">
+      <button class="popup__close">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M31 31L0.999999 1M31 1L1 31" stroke="#F8F8F8" />
+        </svg>
+      </button>
+      <div class="popup__content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.706460592598!2d-83.5421371234732!3d42.199343445239556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf7aebdd17%3A0xc80260d51f732a9f!2s6233%20Truman%20Dr%2C%20Van%20Buren%20Charter%20Township%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710673548481!5m2!1sen!2sru"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div id="imagePopup" class="popup">
+      <button class="popup__close">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M31 31L0.999999 1M31 1L1 31" stroke="#F8F8F8" />
+        </svg>
+      </button>
+      <div class="popup__content">
+        <img class="popup__img" id="popupImage" src="" alt="Popup Image" />
+      </div>
+    </div>
+
+    <div id="requestPopup" class="popup popup--request">
+      <button class="popup__close">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M31 31L0.999999 1M31 1L1 31" stroke="#F8F8F8" />
+        </svg>
+      </button>
+      <div class="popup__content">
+        <h2 class="popup__title">
+          Please leave your contacts and set the date
+        </h2>
+        <p class="popup__text">We will call back to clarify details</p>
+        <form class="popup__form">
+          <div class="popup__form-name">
+            <img
+              class="popup__form-img"
+              src="images/name-ico.svg"
+              alt="Name Icon" />
+            <input
+              type="text"
+              placeholder="Your name"
+              class="popup__form-input" />
+          </div>
+          <div class="popup__form-number">
+            <img
+              class="popup__form-img"
+              src="images/phone-grey-ico.svg"
+              alt="Phone Icon" />
+            <input
+              type="email"
+              placeholder="Phone number"
+              class="popup__form-input" />
+          </div>
+
+          <div class="popup__form-box">
+            <img
+              class="popup__form-img"
+              src="images/calendar-ico.svg"
+              alt="Calendar Icon" />
+            <input
+              type="date"
+              class="popup__form-input popup__form-calendar"
+              placeholder="00/00/00" />
+            <p class="popup__form-text">Meeting date (optional)</p>
+          </div>
+
+          <label class="popup__form-checkwrapper">
+            <input class="popup__form-checkbox" type="checkbox" />
+            <p class="popup__form-text">
+              i agree with <a href="#">privacy policy</a>
+            </p>
+          </label>
+          <button type="submit" class="section-link popup__form-btn">
+            Sign up for walk
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer footer--catalogue">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <h2 class="footer__top-title">Didn’t find a suitable house?</h2>
+            <p class="footer__top-text">
+              Contact us and tell about your dream house
+            </p>
+            <a href="tel:7344833700" class="footer__top-phone">734-483-3700</a>
+          </div>
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="logo">
+                <a class="logo__link" href="index.html">
+                  <img src="images/white-logo.svg" alt="Logotype " />
+                  <p class="logo__text">
+                    American Presidential Estates & Capitol Hill
+                  </p>
+                </a>
+              </div>
+              <div class="footer__info-lists">
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Available homes</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Community</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">About us</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Become tenants</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">FAQ</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Contacts</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Pay rent </a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">For tenants</a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link"
+                      >National Homes of Michigan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copy">
+                American Presidential Estates & Capitol Hill © 2020.
+                <span> All rights reserved</span>
+              </p>
+            </div>
+            <div class="footer__contacts">
+              <h4 class="footer__contacts-title">Contacts</h4>
+
+              <div class="footer__contacts-inner">
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      Phone:
+                      <a href="tel:7344833700" class="footer__contacts-link"
+                        >734-483-3700
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Fax:
+                      <a href="tel:7344831292" class="footer__contacts-link"
+                        >734-483-1292
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      General Information:
+                      <a
+                        href="mailto:info@apestates.com "
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Maintenance Request:
+                      <a
+                        href="mailto:info@apestates.com"
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Comments:
+                      <a
+                        href="mailto:comments@apestates.com"
+                        class="footer__contacts-link"
+                        >comments@apestates.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        6300 West AdamsBelleville, Michigan 48111
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Wednesday: 9:00 am to 6:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Friday: 9:00 am to 4:00 pm
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="footer__contacts-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                      width="370"
+                      height="200"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contacts--mobile">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Wednesday: 9:00 am to 6:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">Friday: 9:00 am to 4:00 pm</p>
+              </li>
+            </ul>
+            <div class="footer__contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                width="370"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer__copy">
+              American Presidential Estates & Capitol Hill © 2020.
+              <span> All rights reserved</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/payrentPopup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/catalogue.js"></script>
+  </body>
+</html>

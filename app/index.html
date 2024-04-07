@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FaviconApestates.svg" type="image/svg+xml" />
+
+    <title>Apestates</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <p
+            class="header__info-address wow slideInLeft animate__animated animate__bounce">
+            6300 West AdamsBelleville, Michigan 48111
+          </p>
+          <div class="header__info-box">
+            <a href="tel:7344833700" class="header__info-phone">
+              <img src="images/phone-ico.svg" alt="Phone Icon" />734-483-3700</a
+            >
+            <p class="header__info-worktime">Today: 9:00 am to 5:00 pm</p>
+          </div>
+        </div>
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img src="images/logo.svg" alt="Logotype" />
+              <p class="logo__text">
+                American Presidential Estates & Capitol Hill
+              </p>
+            </a>
+          </div>
+
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="catalogue.html" class="header__menu-link"
+                  >Available homes</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="community.html" class="header__menu-link">Community</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="tenants.html" class="header__menu-link"
+                  >Become tenants</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="faq.html" class="header__menu-link">FAQ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <button id="payrentBtn" class="header__menu-link">
+                  Pay rent
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a href="news.html" class="header__menu-link">For tenants</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="menu">
+            <div class="menu__inner">
+              <button class="menu__close">
+                <span></span>
+                <span></span>
+              </button>
+              <div class="menu__box">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="catalogue.html" class="menu__list-link"
+                      >Available homes</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="community.html" class="menu__list-link"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="tenants.html" class="menu__list-link"
+                      >Become tenants</a
+                    >
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="faq.html" class="menu__list-link">FAQ</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="contacts.html" class="menu__list-link">Contacts</a>
+                  </li>
+                </ul>
+
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <button id="payrentBtnMobile" class="menu__list-link">
+                      Pay rent
+                    </button>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="news.html" class="menu__list-link">For tenants</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu__info">
+                <div class="menu__info-box">
+                  <a href="tel:7344833700" class="menu__info-phone">
+                    <img
+                      src="images/phone-ico.svg"
+                      alt="Phone Icon" />734-483-3700</a
+                  >
+                  <p class="menu__info-worktime">Today: 9:00 am to 5:00 pm</p>
+                </div>
+                <p class="menu__info-address">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="payrentPopup" class="popup popup--payrent">
+      <div class="popup__content">
+        <button class="popup__close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M31 31L0.999999 1M31 1L1 31" stroke="#151515" />
+          </svg>
+        </button>
+        <h2 class="popup__title">How to pay rent</h2>
+        <p class="popup__text">Use one of these options to pay rent</p>
+        <div class="popup__info">
+          <h4 class="popup__info-title">By mail</h4>
+          <p class="popup__info-text">
+            6300 West Adams Belleville, Michigan 48111
+          </p>
+          <div class="popup__line">OR</div>
+
+          <div class="popup__info">
+            <h4 class="popup__info-title">Online payment</h4>
+            <a href="#" class="popup__info-btn section-link">Click to pay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section
+        class="top-section"
+        style="background-image: url(./images/main-bg.jpg)">
+        <div class="container">
+          <div class="top-section__inner">
+            <div class="top-section__text">
+              <p class="">
+                Come live in a Manufactured Home Community that you can call
+                home, while building equity and maximizing the value of each
+                dollar you spend on housing.
+              </p>
+            </div>
+            <h1 class="top-section__title global-title">community for life</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section about">
+        <div class="container">
+          <div class="about__inner">
+            <h5 class="about__title section-subtitle">About us</h5>
+            <div class="about__item">
+              <div class="about__item-image">
+                <img
+                  class="about__item-img"
+                  src="images/about-img.jpg"
+                  alt="About us image" />
+              </div>
+              <div class="about__item-box">
+                <div class="about__item-text">
+                  <p>
+                    Louis El'Chonen was born and raised in Michigan and has been
+                    a developer of quality residential and commercial properties
+                    in both Florida and Michigan for over 60 years.
+                  </p>
+                  <p>
+                    After developing several upscale affordable Mobile Home
+                    projects in Southwest Florida, Louis turned his attention to
+                    Michigan. He saw that people in Michigan could benefit from
+                    a subdivision styled manufactured home community like the
+                    upscale retirement communities in Florida.
+                  </p>
+                  <p>
+                    With this in mind, he designed and developed American
+                    Presidential Estates & Capitol Hills.
+                  </p>
+                </div>
+                <div class="about__item-text">
+                  <p>
+                    American Presidential Estates & Capitol Hills are proud
+                    members of Michigan Manufactured Housing and RV Association
+                  </p>
+                  <p>
+                    American Presidential Estates & Capitol Hills are in good
+                    standing with the State of Michigan, Manufactured Housing
+                    Commission, with zero complaints on file.
+                  </p>
+                  <p>
+                    With a 20+ Year Track Record of Excellence, we have stood
+                    the test of time
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section welcome">
+        <div class="container">
+          <h2 class="global-title">welcome home</h2>
+        </div>
+      </section>
+
+      <section class="section available">
+        <div class="container">
+          <div class="available__inner">
+            <h5 class="available__title section-subtitle">Available homes</h5>
+            <div class="available__wrapper">
+              <div class="available__info">
+                <h4 class="available__info-title section-title">
+                  Want to Buy a House?
+                </h4>
+                <p class="available__info-text">
+                  Buying a home is an incredible investment and one of the most
+                  important decisions you can make. See available houses to get
+                  started on your journey to a new home.
+                </p>
+              </div>
+              <div class="available__box">
+                <a href="catalogue.html" class="available__link"
+                  >Watch full catalogue
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 14L14 1M14 1V14M14 1H3.08" stroke="#232323" />
+                  </svg>
+                </a>
+                <div class="available__controls">
+                  <button class="available__slider-prev">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="15"
+                        cy="15"
+                        r="14.55"
+                        transform="matrix(-1 0 0 1 30 0)"
+                        stroke="#181818"
+                        stroke-width="0.9" />
+                      <path
+                        d="M18.8999 24L9.8999 15L18.8999 5.99999"
+                        stroke="#181818"
+                        stroke-width="0.9"
+                        stroke-linecap="round" />
+                    </svg>
+                  </button>
+                  <button class="available__slider-next">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="15"
+                        cy="15"
+                        r="14.55"
+                        stroke="#181818"
+                        stroke-width="0.9" />
+                      <path
+                        d="M11.1001 24L20.1001 15L11.1001 5.99999"
+                        stroke="#181818"
+                        stroke-width="0.9"
+                        stroke-linecap="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="available__slider swiper">
+            <div class="available__slider-wrapper swiper-wrapper">
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-1.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6279 Lincoln Ct</h6>
+                  <p class="available__slider-price">85 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-2.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6257 W Adams</h6>
+                  <p class="available__slider-price">125 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-3.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6201 Truman Dr</h6>
+                  <p class="available__slider-price">100 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-4.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">5321 Truman Dr</h6>
+                  <p class="available__slider-price">85 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-1.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6279 Lincoln Ct</h6>
+                  <p class="available__slider-price">85 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-2.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6257 W Adams</h6>
+                  <p class="available__slider-price">125 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-3.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">6201 Truman Dr</h6>
+                  <p class="available__slider-price">100 000$</p>
+                </div>
+              </div>
+              <div class="available__slider-slide swiper-slide">
+                <div class="available__slider-image">
+                  <img
+                    class="available__slider-img"
+                    src="images/available-4.jpg"
+                    alt="Slider Image" />
+                  <div class="available__slider-hover">
+                    <ul class="available__slider-list slider__list">
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Maintenance</p>
+                        <p class="slider__list-text">500$ monthly</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">3</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Bedrooms</p>
+                        <p class="slider__list-text">2</p>
+                      </li>
+                      <li class="slider__list-item">
+                        <p class="slider__list-text">Square</p>
+                        <p class="slider__list-text">1200 feet<sup>2</sup></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="available__slider-info">
+                  <h6 class="available__slider-address">5321 Truman Dr</h6>
+                  <p class="available__slider-price">85 000$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="logo">
+                <a class="logo__link" href="index.html">
+                  <img src="images/white-logo.svg" alt="Logotype " />
+                  <p class="logo__text">
+                    American Presidential Estates & Capitol Hill
+                  </p>
+                </a>
+              </div>
+              <div class="footer__info-lists">
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Available homes</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Community</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">About us</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Become tenants</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">FAQ</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Contacts</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Pay rent </a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">For tenants</a>
+                  </li>
+
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link"
+                      >National Homes of Michigan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copy">
+                American Presidential Estates & Capitol Hill © 2020.
+                <span> All rights reserved</span>
+              </p>
+            </div>
+            <div class="footer__contacts">
+              <h4 class="footer__contacts-title">Contacts</h4>
+
+              <div class="footer__contacts-inner">
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      Phone:
+                      <a href="tel:7344833700" class="footer__contacts-link"
+                        >734-483-3700
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Fax:
+                      <a href="tel:7344831292" class="footer__contacts-link"
+                        >734-483-1292
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      General Information:
+                      <a
+                        href="mailto:info@apestates.com "
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Maintenance Request:
+                      <a
+                        href="mailto:info@apestates.com"
+                        class="footer__contacts-link"
+                        >info@apestates.com
+                      </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                      Comments:
+                      <a
+                        href="mailto:comments@apestates.com"
+                        class="footer__contacts-link"
+                        >comments@apestates.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__contacts-box">
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        6300 West AdamsBelleville, Michigan 48111
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Wednesday: 9:00 am to 6:00 pm
+                      </p>
+                    </li>
+                    <li class="footer__contacts-item">
+                      <p class="footer__contacts-text">
+                        Friday: 9:00 am to 4:00 pm
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="footer__contacts-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                      width="370"
+                      height="200"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contacts--mobile">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  6300 West AdamsBelleville, Michigan 48111
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Monday, Tuesday, Thursday: 9:00 am to 5:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">
+                  Wednesday: 9:00 am to 6:00 pm
+                </p>
+              </li>
+              <li class="footer__contacts-item">
+                <p class="footer__contacts-text">Friday: 9:00 am to 4:00 pm</p>
+              </li>
+            </ul>
+            <div class="footer__contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.68620105776!2d-83.54530740986293!3d42.19977657098541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b59cf0ae593d9%3A0x3be2f851298b5352!2s6300%20W%20Adams%2C%20Belleville%2C%20MI%2048111%2C%20USA!5e0!3m2!1sen!2sru!4v1710588198358!5m2!1sen!2sru"
+                width="370"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer__copy">
+              American Presidential Estates & Capitol Hill © 2020.
+              <span> All rights reserved</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="js/payrentPopup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

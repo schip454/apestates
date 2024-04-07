@@ -1,0 +1,127 @@
+.faq {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    max-width: 1050px;
+    width: 100%;
+  }
+  &__item {
+    margin-bottom: 29px;
+    position: relative;
+    border-bottom: 1px solid rgba($color: $main-colors-dark, $alpha: 0.4);
+    padding-bottom: 25px;
+  }
+  &__item-title {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+
+    p {
+      max-width: 638px;
+    }
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $main-colors-accent;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateX(-50%);
+
+      transition: 0.3s ease;
+    }
+    &::after {
+      content: '';
+      width: 30px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $main-colors-accent;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateX(-50%) rotate(90deg);
+      transition: 0.3s ease;
+      opacity: 1;
+    }
+
+    &.active::after {
+      opacity: 0;
+    }
+  }
+  &__item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    p:first-child {
+      padding-top: 25px;
+    }
+    p {
+      padding: 10px;
+      margin: 0;
+    }
+    ul {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .faq__title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .faq__item-title p {
+    max-width: 521px;
+  }
+  .faq__item-content p {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    padding: 5px;
+    max-width: 521px;
+  }
+  .faq__item-content li {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    max-width: 521px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .faq__item-title {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+  .faq__item-title p {
+    max-width: 400px;
+  }
+  .faq__item-title::before,
+  .faq__item-title::after {
+    width: 18px;
+    height: 3px;
+  }
+  .faq__item-content p {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .faq__item-title p {
+    max-width: 230px;
+  }
+}
