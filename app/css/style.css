@@ -5801,9 +5801,13 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .wow {
-    -webkit-animation: none;
-            animation: none;
+  .main {
+    overflow: hidden;
+  }
+  .section-subtitle,
+  .section-title--big {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
   }
   body {
     background: #fff;
